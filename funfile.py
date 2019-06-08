@@ -43,6 +43,7 @@ MaxVal= 1000000
 Step  = MaxVal/MaxPix
 Processes = 2
 RefreshRate = 10
+WorkDir = '/lib'
 
 # Constants to index an array
 Q = 0
@@ -144,8 +145,10 @@ if __name__ == '__main__':
     worker.start()
 
     # Starting File-Scanner
-    get_sizes('/opt', producer_outputs)
+    get_sizes(WorkDir, producer_outputs)
 
     # Wait for all data going into the last thread to be consumed.
+    for output in producer_outputs:
+        output.join()
     for input in plot_inputs.keys():
         plot_inputs[input][0].join()
