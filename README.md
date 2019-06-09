@@ -1,8 +1,8 @@
 # funfile
 A toy project to demonstrate knowledge of:
-    * Object Oriented Programming
-    * Concurrency
-    * DSP
+* Object Oriented Programming
+* Concurrency
+* DSP
 with basic python libraries.
 
 Funfile will scan the lib directory of a linux system.
@@ -14,13 +14,13 @@ This signal is then processed (only DCT at the moment) and plotted in the CLI.
 Important constants (to be exposed as CLI parameters in the future):
 * TotalBars: Horizontal size of CLI graph.
 * MaxPix: Vertical size of CLI graph.
-* MaxVal: Maximum file-size for graphs, in bytes. Defaulted to 100MB
+* MaxVal: Maximum file-size for graphs, in bytes. Fixed to 100MB
 * RefreshRate: Number of plots per second.
 * WorkDir: Directory where to scan from.
 
 ## Running
 ```sh
-python 3 funfile.py
+python3 funfile.py
 ```
 
 ## Requirements
