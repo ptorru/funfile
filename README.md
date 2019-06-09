@@ -3,7 +3,8 @@ A toy project to demonstrate knowledge of:
 * Object Oriented Programming
 * Concurrency
 * DSP
-with basic python libraries.
+
+with the use of basic python libraries.
 
 Funfile will scan the lib directory of a linux system.
 
