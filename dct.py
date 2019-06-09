@@ -1,15 +1,16 @@
-########################################################################################################################
+#################################################################################
 #  Copyright (c) 2019 Pedro Torruella
 #
 # Author: Pedro Torruella
 #
-# Description: Direct Cosine Transform. Just a very quick function to implement DCT on the elements of a list.
+# Description: Direct Cosine Transform. Just a very quick function to
+#              implement DCT on the elements of a list.
 #
 #
 # Resources
 # Consulted:
 #              [1] https://en.wikipedia.org/wiki/Discrete_cosine_transform
-########################################################################################################################
+#################################################################################
 
 
 from math import cos
